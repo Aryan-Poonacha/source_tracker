@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <!-- STUFF FOR BUTTON TEXT TO SPEECH -->
+    <!--
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Tap to start captioning"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        />
+
+    <ImageButton
+        android:id="@+id/speakbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Mic Button"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_baseline_mic_off_24"
+        android:translationX="180dp"
+        android:translationY="400dp" />
+
+        -->
+
+    <!-- STUFF FOR CONTINUOUS -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cameraPreview"
+        android:text="Start Camera"
+        android:translationX="127dp"
+        android:translationY="500dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:translationY="40dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="47dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:translationY="70dp" />
+
+    <TextView
+        android:id="@+id/errorView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:translationY="140dp" />
+
+
+
+</RelativeLayout>
